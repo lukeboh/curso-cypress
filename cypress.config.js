@@ -18,12 +18,9 @@ module.exports = defineConfig({
         }
       });
     },
-    reporter: 'mochawesome',
+    reporter: 'cypress-multi-reporters',
     reporterOptions: {
-      reportDir: 'cypress/results',
-      overwrite: false,
-      html: true,
-      json: true,
-      timestamp: "mmddyyyy_HHMMss" }
+      configFile: 'reporter-config.json',
+    }
   },
 });
