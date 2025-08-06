@@ -10,7 +10,7 @@ describe('Página de Cadastro', () => {
     cy.wait(3000); // espera 3 segundos
     cy.contains('Falha ao cadastrar!').should('not.exist');
   })
-  /*
+  
   it('deve carregar a página corretamente e clicar no botão ‘Ver pets disponíveis para adoção”', () => {
       cy.visit('https://adopet-frontend-cypress.vercel.app/');
       cy.get('.button').click()     
@@ -31,6 +31,6 @@ describe('Página de Cadastro', () => {
         cy.visit('https://adopet-frontend-cypress.vercel.app/home');
         cy.get('.header__message').click()  
     })
-    */
+    
 });
 
